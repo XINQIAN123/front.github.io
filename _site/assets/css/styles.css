@@ -1,3 +1,5 @@
 .current { color: #004d80; }
 
+.current:hover { color: blue; }
+
 /*# sourceMappingURL=styles.css.map */

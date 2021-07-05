@@ -14,24 +14,77 @@ background-color: #25b1db;
 padding: 1px;
 text-align: center;
 }
-.bannerbox {
-width:100%;
-position:relative;
-overflow:hidden;
-height:200px;
-}
-.banner {
-width:3000px;/*图片宽度*/
-position:absolute;
-left:50%;
-margin-left:-1500px;/*图片宽度的一半*/
-}
 header ul
     { 
   background-color: black;}
 header li
     {color: white;
     display:inline-block;}
+    .wrap{
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /*改变左右上下,图片方块移动*/
+    
+}
+.banner-imgBox{
+            width: 1530px;
+            height: 470px;
+            /*background-color: #009dda;*/
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-imgBox2{
+            width: 1530px;
+            height: 470px;
+            display: flex;
+            /*background-color: chartreuse;*/
+            margin: 0 auto;
+            transition: all 0.5s;
+        }
+        .banner-imgBox2>img{
+            width: 1530px;
+            height: 470px;
+        }
+        .on{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: gainsboro;
+            margin-left: 20px;
+        }
+        .banner-imgBox-div{
+            width: 400px;
+            position: absolute;
+            bottom: 20px;
+            left: 40%;
+            display: flex;
+        }
+        .on2{
+            background-color: red;
+        }
+        .banner-imgBox-left{
+            position: absolute;
+            left: 20px;
+            top:48%;
+            width: 48px;
+            height: 48px;
+        }
+        .banner-imgBox-right{
+            position: absolute;
+            right: 20px;
+            top:48%;
+            width: 48px;
+            height: 48px;
+            margin-right: 0;
+        }
     </style>
   </head>
   <body>

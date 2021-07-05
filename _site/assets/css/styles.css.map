@@ -6,7 +6,7 @@
 		"_sass/main.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";",
+		"@import \"main\";\n",
 		".current {\n    color: rgb(0, 77, 128);\n  }\n.current:hover  \n{color: blue;}\n"
 	],
 	"names": [],

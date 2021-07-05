@@ -14,24 +14,77 @@ background-color: #25b1db;
 padding: 1px;
 text-align: center;
 }
-.bannerbox {
-width:100%;
-position:relative;
-overflow:hidden;
-height:200px;
-}
-.banner {
-width:3000px;/*图片宽度*/
-position:absolute;
-left:50%;
-margin-left:-1500px;/*图片宽度的一半*/
-}
 header ul
     { 
   background-color: black;}
 header li
     {color: white;
     display:inline-block;}
+    .wrap{
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    /*改变左右上下,图片方块移动*/
+    
+}
+.banner-imgBox{
+            width: 1530px;
+            height: 470px;
+            /*background-color: #009dda;*/
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner-imgBox2{
+            width: 1530px;
+            height: 470px;
+            display: flex;
+            /*background-color: chartreuse;*/
+            margin: 0 auto;
+            transition: all 0.5s;
+        }
+        .banner-imgBox2>img{
+            width: 1530px;
+            height: 470px;
+        }
+        .on{
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: gainsboro;
+            margin-left: 20px;
+        }
+        .banner-imgBox-div{
+            width: 400px;
+            position: absolute;
+            bottom: 20px;
+            left: 40%;
+            display: flex;
+        }
+        .on2{
+            background-color: red;
+        }
+        .banner-imgBox-left{
+            position: absolute;
+            left: 20px;
+            top:48%;
+            width: 48px;
+            height: 48px;
+        }
+        .banner-imgBox-right{
+            position: absolute;
+            right: 20px;
+            top:48%;
+            width: 48px;
+            height: 48px;
+            margin-right: 0;
+        }
     </style>
   </head>
   <body>
@@ -40,8 +93,6 @@ header li
     <a href="/" class="current">Home</a>
   
     <a href="/about.html" >About</a>
-  
-    <a href="/contact.html" >Contact</a>
   
 </nav>
     <!DOCTYPE html>
@@ -85,13 +136,26 @@ header li
         <li>个人中心</li>
     </ul>
 </header>
-<div class="bannerbox">
-        <div class="banner">
-        <img src="assets/css/images/甲斗/甲斗/">
-        </div>
+<div class="banner-imgBox">
+    <div class="banner-imgBox2">
+        <img src="assets/css/images/甲斗/甲斗/banner01.jpg" alt="">
+        <img src="assets/css/images/甲斗/甲斗/banner02.jpg" alt="">
+        <img src="assets/css/images/甲斗/甲斗/banner03.jpg" alt="">
+        <img src="assets/css/images/甲斗/甲斗/banner04.jpg" alt="">
+        <img src="assets/css/images/甲斗/甲斗/banner05.jpg" alt="">
+    </div>
+    <div class="banner-imgBox-div">
+        <div class="on"></div>
+        <div class="on"></div>
+        <div class="on"></div>
+        <div class="on"></div>
+        <div class="on"></div>
+    </div>
+    <img class="banner-imgBox-left" src="assets/css/images/甲斗/甲斗/banner09.png" onclick="marginLeft(false)">
+    <img class="banner-imgBox-right" src="assets/css/images/甲斗/甲斗/banner08.png" onclick="marginLeft(true)">
 </div>
 <h2>假面骑士KABUTO</h2>
-<div id="content" style="position:absolute;left:500px;height:50px;width: 300px;">
+<div id="content" style="position:absolute;left:500px;height:50px;width: 300px; text-indent: 2em;">
 《假面骑士Kabuto》(原文:仮面ライダーカブト/Masked Rider Kabuto)，平成骑士系列的第7弹，也是假面骑士诞生35周年作品。由于是纪念作，所以再次采用昆虫造型(巨型甲虫角日语KABUTOMUSHI)的设计，配合如《假面骑士555》般充满金属机械感，当中新颖的战斗场面采用了有如"Matrix(黑客帝国)"的拍摄手法，大量CG增加了速度感及观感。超速战斗成为了本作的卖点，骑士和怪人能在超高速形态下战斗!
 </div>
 <a href="assets/css/images/甲斗/甲斗/XQLRISGX7VU7XZ7HT.jpg">
@@ -102,7 +166,7 @@ header li
  <a href="dongyi.html" >东映株式会社</a>
                 <br>
                 <div id="flip">简介</div>
-                <div id="panel">1999年10月19日，巨大陨石突然向地球飞来，落下并直接击中日本涉谷，周围地区因此毁灭，伤亡惨重，称为"涉谷陨石事件"。即使7年后，涉谷仍未复兴，并持续封锁中。只是灾难并未就此结束，一切才刚开始。
+                <div id="panel" style="text-indent: 2em;">1999年10月19日，巨大陨石突然向地球飞来，落下并直接击中日本涉谷，周围地区因此毁灭，伤亡惨重，称为"涉谷陨石事件"。即使7年后，涉谷仍未复兴，并持续封锁中。只是灾难并未就此结束，一切才刚开始。
                     陨石落下后，不明宇宙生物拟态成人类活动于城市中，不断杀害人类并繁殖，造成人们的恐慌。为了消灭这些被称为Worm的生物，人类组成了一个秘密组织ZECT。但由于异虫拥有难以肉眼辨认的高速移动能力“Clock Up”，ZECT一再战败。最后的希望只剩下未及完成的武装系统Masked Rider System（假面骑士系统）。如果有能够装备这套系统，并运用自如的人出现，那么ZECT就能得到足够的力量和异虫对抗。
                     异虫再度出没，ZECT队员们被逼入绝境。目睹苦战的同伴，加贺美决心要成为骑士而战。但是，从空中飞来的Masked Rider System核心之一“Kabuto Zecter”，却飞到了忽然出现的天道手中。把从童年时就得到的腰带与Kabuto Zector联组在一起，天道在一瞬间被独角仙外型的装甲服包住身体，轻而易举的打倒异虫，假面骑士Kabuto就此诞生。。对于他如此桀骜不驯的态度，加贺美感到惊愕而困惑。
                     但是，对于不过是一介平民，而且非组织成员的天道，ZECT判定他没有资格成为Kabuto的装备者，并委托接连诞生的新骑士们，抹杀假面骑士Kabuto适能者天道总司。
@@ -110,7 +174,6 @@ header li
                 </div>
 </div>
 <br><div>
-<section>
 <a  href="assets/css/images/甲斗/甲斗/0dd7912397dda1447247d4acb2b7d0a20cf48666.jpg">
 <img src="assets/css/images/甲斗/甲斗/0dd7912397dda1447247d4acb2b7d0a20cf48666.jpg" width="320" height="200"></a>
 <a  href="assets/css/images/甲斗/甲斗/80cb39dbb6fd526617f71c01ab18972bd50736c2.jpg">
@@ -119,7 +182,6 @@ header li
 <img src="assets/css/images/甲斗/甲斗/src=http___5b0988e595225.cdn.sohucs.com_q_70,c_zoom,w_640_images_20190418_339fe0bca3a44facb4dd106b01c86a4b.jpeg&refer=http___5b0988e595225.cdn.sohucs.jpg" width="320" height="200"></a>
 <a href="assets/css/images/甲斗/甲斗/src=http___gss0.baidu.com_-4o3dSag_xI4khGko9WTAnF6hhy_zhidao_pic_item_9213b07eca806538d0ed194893dda144ad348262.jpg&refer=http___gss0.baidu.jpg">
 <img src="assets/css/images/甲斗/甲斗/src=http___gss0.baidu.com_-4o3dSag_xI4khGko9WTAnF6hhy_zhidao_pic_item_9213b07eca806538d0ed194893dda144ad348262.jpg&refer=http___gss0.baidu.jpg" width="320" height="200"></a>
-</section>
 </div>
 <br>
 <div>
@@ -132,6 +194,67 @@ header li
     <p><span><a>企业推广</a></span><b> |</b> <span><a>诚聘英才</a></span><b> |</b><span><a>免责声明</a></span> </p>
   </div>
 </body>
+<script>
+    var time=2000;
+    let content = document.querySelector('.banner-imgBox2');
+    let switchBtn = document.querySelector('.banner-imgBox-div');
+    switchBtn.children[0].classList.add('on2');
+    let index=0;
+    let x=0;
+    function marginLeft(right) {
+        if(right){
+            switchBtn.children[index].classList.remove('on2');
+            if(index==switchBtn.children.length-1){
+                index=0;
+                content.innerHTML+=content.innerHTML;
+                x++;
+            }else {
+                index++;
+                x++;
+            }
+            switchBtn.children[index].classList.add('on2');
+            content.style.marginLeft=x*-1530+"px"
+        }else{
+            switchBtn.children[index].classList.remove('on2');
+            if(index==0){
+                index=switchBtn.children.length-1;
+                if(x==0){
+                    x=0
+                }else{
+                    x--;
+                }
+            }else {
+                index--;
+                x--;
+            }
+            switchBtn.children[index].classList.add('on2');
+            content.style.marginLeft=x*-1530+"px"
+        }
+
+    }
+
+
+    var interval = setInterval(() => {
+        marginLeft(true)
+    }, time);
+
+
+    let container = document.querySelector('.banner-imgBox');
+    // 鼠标经过时清除定时器
+    container.onmouseover = function () {
+        clearInterval(interval);
+    }
+    // 鼠标移开时设置定时器
+    container.onmouseout = function () {
+        // 先清除定时器
+        clearInterval(interval);
+        // 往右滑动并开启定时器
+        // marginLeft(true)
+        interval = setInterval(() => {
+            marginLeft(true)
+        }, time);
+    }
+</script>
  </html>
   </body>
 </html>

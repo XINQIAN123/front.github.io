@@ -6,9 +6,9 @@
 		"_sass/main.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";\n",
+		"@import \"main\";\n.con video{.con video{text-align: center;}}",
 		".current {\n    color: rgb(0, 77, 128);\n  }\n.current:hover  \n{color: blue;}\n"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,OAAe,GACvB;;AACH,AAAA,QAAQ,CAAC,KAAK,CACd,EAAC,KAAK,EAAE,IAAI,GAAG"
+	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,OAAe,GACvB;;AACH,AAAA,QAAQ,CAAC,KAAK,CACd,EAAC,KAAK,EAAE,IAAI,GAAG;;ADHf,AAAW,IAAP,CAAC,KAAK,CAAC,IAAI,CAAC,KAAK,CAAA,EAAC,UAAU,EAAE,MAAM,GAAG"
 }
